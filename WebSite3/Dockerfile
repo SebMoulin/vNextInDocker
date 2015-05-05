@@ -5,7 +5,7 @@ WORKDIR /app
 RUN apt-get update -qq \
     && apt-get install -qqy git
 	&& git config --global url."http://".insteadOf git://
-RUN ["kpm", "restore"]
+RUN ["kpm", "restore", "-s", "https://www.myget.org/F/aspnetvnext/api/v2", "-f", "https://nuget.org/api/v2"]
 
 EXPOSE 5080
 ENTRYPOINT ["k", "kestrel"]
