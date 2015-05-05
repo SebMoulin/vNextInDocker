@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model WebSite3.Models.NewTestEnvironmentSetUpViewModel
+
+<div class="jumbotron">
+    <h1>Candidates coding excercice environment set up</h1>
+    <p class="lead">Use this page to set up a environment for the coding excercie of TEKSystems Candidates</p>
+</div>
+
+@if (!string.IsNullOrWhiteSpace(@Model.Message))
+{
+    var alertClass = "alert-success";
+    if (!@Model.Success)
+    {
+        alertClass = "alert-danger";
+    }
+    <div class="alert @alertClass">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        @Model.Message
+    </div>
+}
+
+<h1>Create Candidate Test Environment</h1>
+@using (Html.BeginForm("CreateTestEnv", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        @Html.LabelFor(x => x.Email, new { @class = "control-label" })
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control input-sm", placeholder = "Candidate's Email", @autofocus = "autofocus" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Username, new { @class = "control-label" })
+        @Html.TextBoxFor(x => x.Username, new { @class = "form-control input-sm", placeholder = "Candidate's Username" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Name, new { @class = "control-label" })
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control input-sm", placeholder = "Candidate's Name" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(vm => vm.AvailableTestEnv, new { @class = "control-label" })
+        @Html.DropDownListFor(vm => vm.SelectedDevEnv, @Model.AvailableTestEnv, new { @class = "form-control input-sm" })
+    </div>
+
+    <button type="submit" class="btn btn-xs btn-primary">SetUp Environment</button>
+}
+
+<div id="loadingwheelmodal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
