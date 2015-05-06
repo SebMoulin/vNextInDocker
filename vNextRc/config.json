@@ -1,0 +1,33 @@
+{
+    "dotnet-coding-exercise-template-name": "dotnet-dev-coding-exercise-template",
+    "java-coding-exercise-template-name": "java-dev-coding-exercise-template",
+    "gitLab-base-url": "https://192.168.37.90/",
+    "gitLab-api-version": "api/v3/",
+    "admin-name": "administrator",
+    "admin-username": "root",
+    "admin-password": "adminadmin",
+    "admin-email": "admin@example.com",
+    "smtp-server": "ismtp.allegisgroup.com",
+    "smtp-server-port": "",
+    "notification-email-from": "recruit@teksystems.com",
+    "notification-email-subject": "Your TEKSystems coding excercise environement is ready",
+    "jenkins-username": "jenkins-user",
+    "coding-exercise-group-name": "coding-exercise-group",
+    "elasticSearch-base-url": "http://192.168.37.90:9200/",
+    "elasticSearch-api-version": "",
+    "elasticSearch-report-schema-path": "sonar/report",
+    "elasticSearch-candidates-schema-path": "candidate/evaluation",
+    "sonar-base-url": "http://192.168.37.90:9000/",
+    "sonar-api-version": "api/",
+    "sonar-metrics": "ncloc,coverage,tests,sqale_index,duplicated_blocks,comment_lines_density,complexity",
+    "geolocation-base-url": "http://services.gisgraphy.com/",
+    "geohash-base-url": "http://geohash.org/",
+    "AppSettings": {
+        "SiteTitle": "vNextRc"
+    },
+    "Data": {
+        "DefaultConnection": {
+            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-vNextRc-c58bd329-d3eb-4c9e-9ee1-4b0fe00537ee;Trusted_Connection=True;MultipleActiveResultSets=true"
+        }
+    }
+}
