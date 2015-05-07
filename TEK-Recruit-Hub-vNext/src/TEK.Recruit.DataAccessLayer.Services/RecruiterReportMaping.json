@@ -1,0 +1,125 @@
+﻿{
+    "mappings": {
+        "report": {
+            "properties": {
+                "commentLinesDensity": {
+                    "type": "double"
+                },
+                "complexity": {
+                    "type": "double"
+                },
+                "coverage": {
+                    "type": "double"
+                },
+                "duplicatedBlocks": {
+                    "type": "double"
+                },
+                "ncloc": {
+                    "type": "double"
+                },
+                "sqaleIndex": {
+                    "type": "double"
+                },
+                "tests": {
+                    "type": "long"
+                },
+                "projectId": {
+                    "type": "string"
+                },
+                "projectName": {
+                    "type": "string"
+                },
+                "projectWebUrl": {
+                    "type": "string"
+                },
+                "projectCreatedAt": {
+                    "type": "date"
+                },
+                "projectLastActivityAt": {
+                    "type": "date"
+                },
+                "commitsCount": {
+                    "type": "long"
+                },
+                "firstCommitDate": {
+                    "type": "date"
+                },
+                "lastCommitDate": {
+                    "type": "date"
+                },
+                "hoursTakenToCompleteCodingExcercise": {
+                    "type": "double"
+                },
+                "customerId": {
+                    "type": "string"
+                },
+                "customerName": {
+                    "type": "string"
+                },
+                "candidateId": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "candidateName": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "postalCode": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "position": {
+                    "type": "string"
+                },
+                "tekCenter": {
+                    "type": "string"
+                },
+                "devEnv": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "geo_point"
+                },
+                "passedFirstScreening": {
+                    "type": "boolean"
+                },
+                "passedFirstScreeningDate": {
+                    "type": "date"
+                },
+                "agenda": {
+                    "type": "string"
+                },
+                "codeQuality": {
+                    "type": "long"
+                },
+                "culturalFit": {
+                    "type": "long"
+                },
+                "technicalInterview": {
+                    "type": "long"
+                },
+                "passedTheSelection": {
+                    "type": "boolean"
+                },
+                "passedTheSelectionDate": {
+                    "type": "date"
+                },
+                "finalFeedback": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

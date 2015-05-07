@@ -1,0 +1,27 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "",
+    "authors": [ "" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "Castle.Core": "3.3.0",
+        "Castle.Windsor": "3.3.0",
+        "Castle.Windsor.Web.Mvc": "1.0.7",
+        "TEK.Recruit.BusinessServices": "1.0.0-*",
+        "TEK.Recruit.BusinessServices.Services": "1.0.0-*",
+        "TEK.Recruit.Commons": "1.0.0-*",
+        "TEK.Recruit.DataAccessLayer.Services": "1.0.0-*",
+        "TEK.Recruit.Facade": "1.0.0-*",
+        "TEK.Recruit.Facade.Services": "1.0.0-*",
+        "TEK.Recruit.Framework.Configuration.Services": "1.0.0-*",
+        "TEK.Recruit.Framework.Http.Services": "1.0.0-*",
+        "TEK.Recruit.Web": "1.0.0-*"
+    },
+
+    "frameworks": {
+        "dnx451": { }
+    }
+}
