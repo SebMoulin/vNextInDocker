@@ -7,4 +7,4 @@ RUN curl -sL https://deb.nodesource.com/setup | bash - \
     && npm install -g grunt-cli
 RUN ["dnu", "restore"]
 EXPOSE 5080
-ENTRYPOINT ["dnx", ".", "kestrel"]
+ENTRYPOINT ["dnx", "./src/TEK.Recruit.WebApp", "kestrel"]
